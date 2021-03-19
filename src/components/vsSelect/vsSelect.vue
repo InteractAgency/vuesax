@@ -20,6 +20,7 @@
         :readonly="!autocomplete"
         class="input-select vs-select--input"
         type="text"
+        :autocomplete="autocomplete?'off':'on'"
         @keydown.esc.stop.prevent="closeOptions"
         v-on="listeners">
 
